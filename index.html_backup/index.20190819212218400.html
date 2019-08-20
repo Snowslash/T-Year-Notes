@@ -171,8 +171,6 @@ Error message and password prompt
 
 <li>$:/temp/info-plugin</li>
 
-<li>$:/temp/search</li>
-
 <li>$:/theme</li>
 
 <li>$:/themes/tiddlywiki/snowwhite</li>
@@ -191,9 +189,9 @@ Error message and password prompt
 
 <li>Clinical Priority List</li>
 
-<li>New Tiddler</li>
+<li>Draft of 'Clinical Priority List'</li>
 
-<li>Pneumonia</li>
+<li>New Tiddler</li>
 
 <li>Priority Code: 1</li>
 
@@ -9435,10 +9433,10 @@ Error message and password prompt
 <div created="20190818192404635" modified="20190818193129344" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
-<div created="20190818192327760" modified="20190820071644570" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20190818192327760" modified="20190819204406734" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Open</pre>
 </div>
-<div created="20190820071645514" list="Pneumonia Asthma [[Clinical Priority List]]" modified="20190820071655706" title="$:/StoryList">
+<div created="20190819190422926" list="[[Chronic Obstructive Pulmonary Disease]] Asthma [[Draft of 'Clinical Priority List']]" modified="20190819211129431" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9498,9 +9496,6 @@ Error message and password prompt
         }
     }
 }</pre>
-</div>
-<div created="20190820072806830" modified="20190820072811865" title="$:/temp/search">
-<pre></pre>
 </div>
 <div created="20190818192501552" modified="20190818192505052" title="$:/theme">
 <pre>$:/themes/tiddlywiki/snowwhite</pre>
@@ -9623,38 +9618,53 @@ Error message and password prompt
 <div created="20190818192444001" modified="20190818193127066" title="$:/view">
 <pre>classic</pre>
 </div>
-<div created="20190819204201104" modified="20190820071659893" priority-code="1" serious="*" tags="[[Serious Condition]] [[Priority Code: 1]] [[Respiratory System]]" title="Asthma">
+<div created="20190819204201104" modified="20190819212218194" priority-code="1" serious="*" tags="[[Serious Condition]] [[Priority Code: 1]] [[Respiratory System]]" title="Asthma">
 <pre></pre>
 </div>
 <div created="20190819210854855" modified="20190819211947065" priority-code="1" serious="*" tags="[[Serious Condition]] [[Respiratory System]] [[Priority Code: 1]]" title="Chronic Obstructive Pulmonary Disease">
 <pre></pre>
 </div>
-<div created="20190818192507924" modified="20190820073851288" tags="" title="Clinical Priority List">
+<div created="20190818192507924" modified="20190819212034616" tags="" title="Clinical Priority List">
 <pre>__Introduction__
 
 This page contains the T year clinical priority list organised by system. 
 
 Priority codes are as follows:
 
-&lt;&lt;tag &quot;Priority Code: 1&quot;&gt;&gt;: Should have a good knowledge of these conditions and be able to recognise and manage as a newly qualified doctor 
-
-&lt;&lt;tag &quot;Priority Code: 2&quot;&gt;&gt;: Should have some knowledge of these conditions, be able to recognise them, confirming diagnosis and planning first line management in straightforward cases
-
-&lt;&lt;tag &quot;Priority Code: 3&quot;&gt;&gt;: Recognise how these conditions may present (clinical presentation) and describe the principles of management
-
- A &lt;&lt;tag &quot;Serious Condition&quot;&gt;&gt;tag means that the condition is ''life threatening'' and you must recognise and be able to initiate treatment or refer sppropriately.
+# Should have a good knowledge of these conditions and be able to recognise and manage as a newly qualified doctor 
+# Should have some knowledge of these conditions, be able to recognise them, confirming diagnosis and planning first line management in straightforward cases
+# Recognise how these conditions may present (clinical presentation) and describe the principles of management
+ An asterisk (*) means that the condition is ''life threatening'' and you must recognise and be able to initiate treatment or refer sppropriately.
 
 
 __Respiratory System__
+
 &lt;$list filter=&quot;[tag[Respiratory System]]&quot;&gt;
-&lt;br/&gt;&lt;$view field=title/&gt; {{||$:/core/ui/ViewTemplate/tags}}
-&lt;/$list&gt; 
+&lt;br/&gt; &lt;$view field=title/&gt; - &lt;$view field=priority-code&gt; &lt;$view field=serious&gt; &lt;/$list&gt;
+
+</pre>
+</div>
+<div created="20190818192507924" draft.of="Clinical Priority List" draft.title="Clinical Priority List" modified="20190819212209099" tags="" title="Draft of 'Clinical Priority List'">
+<pre>__Introduction__
+
+This page contains the T year clinical priority list organised by system. 
+
+Priority codes are as follows:
+
+# Should have a good knowledge of these conditions and be able to recognise and manage as a newly qualified doctor 
+# Should have some knowledge of these conditions, be able to recognise them, confirming diagnosis and planning first line management in straightforward cases
+# Recognise how these conditions may present (clinical presentation) and describe the principles of management
+ An asterisk (*) means that the condition is ''life threatening'' and you must recognise and be able to initiate treatment or refer sppropriately.
+
+
+__Respiratory System__
+
+&lt;$list filter=&quot;[tag[Respiratory System]]&quot;&gt;
+&lt;$view field=title/&gt; - &lt;$view field=priority-code/&gt; &lt;$view field=serious&gt; &lt;/$list&gt;
+
 </pre>
 </div>
 <div created="20190818192324000" modified="20190818192606748" tags="" title="New Tiddler">
-<pre></pre>
-</div>
-<div created="20190820071714332" modified="20190820071826988" priority-code="1" serious=" " tags="[[Respiratory System]] [[Priority Code: 1]]" title="Pneumonia">
 <pre></pre>
 </div>
 <div color="#ffff80" created="20190819204328574" modified="20190819204328574" title="Priority Code: 1">
